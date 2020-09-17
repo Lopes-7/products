@@ -1,7 +1,11 @@
 # dependencies
+/node_modules
 /frontend/products/node_modules
 /frontend/products/.pnp
 /frontend/products/.pnp.js
+/backend/node_modules
+/backend/.pnp
+/backend/.pnp.js
 
 # misc
 .DS_Store
