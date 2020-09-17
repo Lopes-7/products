@@ -2,7 +2,11 @@
  * IMPORTS
  */
 import React from 'react';
+import {Provider} from 'react-redux';
+import Sidebar from './components/Sidebar';
+import Display from './components/Display';
 import GlobalStyle from './global';
+import {store} from './store';
 
 /**
  * CODE
@@ -10,7 +14,11 @@ import GlobalStyle from './global';
 function App() {
     return (
         <div className="app">
-            <GlobalStyle />
+            <Provider store={store}>
+                <Sidebar />
+                <Display />
+                <GlobalStyle />
+            </Provider>
         </div>
     );
 }
